@@ -1,0 +1,39 @@
+
+force_cast: warning
+force_try: warning
+
+type_body_length:
+  warning: 300
+  error: 400
+
+file_length:
+  warning: 600
+  error: 800
+
+line_length:
+  warning: 150
+  error: 200
+
+function_body_length:
+  warning: 20
+  error: 30
+
+function_parameter_count:
+  warning: 4
+  error: 5
+
+identifier_name:
+  excluded:
+    - id
+    - url
+
+vertical_whitespace:
+  max_empty_lines: 2 
+
+disabled_rules:
+  - statement_position
+  - trailing_newline
+  - operator_whitespace
+  - type_name
+  - shorthand_operator
+  - generic_type_name
