@@ -8,26 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		81225FDD21B9647500AA0C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225FDC21B9647500AA0C75 /* AppDelegate.swift */; };
-		81225FDF21B9647500AA0C75 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225FDE21B9647500AA0C75 /* HomeViewController.swift */; };
+		81225FDF21B9647500AA0C75 /* JobSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225FDE21B9647500AA0C75 /* JobSearchViewController.swift */; };
 		81225FE221B9647500AA0C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81225FE021B9647500AA0C75 /* Main.storyboard */; };
 		81225FE421B9647700AA0C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81225FE321B9647700AA0C75 /* Assets.xcassets */; };
 		81225FE721B9647700AA0C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81225FE521B9647700AA0C75 /* LaunchScreen.storyboard */; };
 		81225FFB21B9680000AA0C75 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225FFA21B9680000AA0C75 /* ApplicationCoordinator.swift */; };
-		8122600021B96E7D00AA0C75 /* JorSearchFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225FFF21B96E7D00AA0C75 /* JorSearchFlowCoordinator.swift */; };
+		8122600021B96E7D00AA0C75 /* JobSearchFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225FFF21B96E7D00AA0C75 /* JobSearchFlowCoordinator.swift */; };
 		8122600221B96ED800AA0C75 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122600121B96ED800AA0C75 /* CoordinatorProtocol.swift */; };
+		815B933921B975D5005497FB /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815B933821B975D5005497FB /* Injectable.swift */; };
+		815B933C21B9766B005497FB /* JorSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815B933B21B9766B005497FB /* JorSearchPresenter.swift */; };
+		81C8E0D121B97F980054925A /* JobSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8E0D021B97F980054925A /* JobSearchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81225FD921B9647500AA0C75 /* GithubJobsIOS-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GithubJobsIOS-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81225FDC21B9647500AA0C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81225FDE21B9647500AA0C75 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		81225FDE21B9647500AA0C75 /* JobSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchViewController.swift; sourceTree = "<group>"; };
 		81225FE121B9647500AA0C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81225FE321B9647700AA0C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81225FE621B9647700AA0C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81225FE821B9647700AA0C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81225FFA21B9680000AA0C75 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
-		81225FFF21B96E7D00AA0C75 /* JorSearchFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JorSearchFlowCoordinator.swift; sourceTree = "<group>"; };
+		81225FFF21B96E7D00AA0C75 /* JobSearchFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchFlowCoordinator.swift; sourceTree = "<group>"; };
 		8122600121B96ED800AA0C75 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		815B933821B975D5005497FB /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
+		815B933B21B9766B005497FB /* JorSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JorSearchPresenter.swift; sourceTree = "<group>"; };
+		81C8E0D021B97F980054925A /* JobSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 		81225FF221B9660C00AA0C75 /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8122600321B96F1D00AA0C75 /* Interfaces */,
 				81225FF921B967E700AA0C75 /* Flow */,
 				81225FDC21B9647500AA0C75 /* AppDelegate.swift */,
 			);
@@ -122,7 +129,8 @@
 		81225FF421B9664C00AA0C75 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				81225FDE21B9647500AA0C75 /* HomeViewController.swift */,
+				815B933A21B9761F005497FB /* View */,
+				815B933B21B9766B005497FB /* JorSearchPresenter.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -154,27 +162,36 @@
 		81225FF921B967E700AA0C75 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
-				8122600321B96F1D00AA0C75 /* CoordinatorProtocol */,
-				81225FFD21B96E1C00AA0C75 /* JorSearchFlow */,
+				81225FFD21B96E1C00AA0C75 /* JobSearchFlow */,
 				81225FFA21B9680000AA0C75 /* ApplicationCoordinator.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
 		};
-		81225FFD21B96E1C00AA0C75 /* JorSearchFlow */ = {
+		81225FFD21B96E1C00AA0C75 /* JobSearchFlow */ = {
 			isa = PBXGroup;
 			children = (
-				81225FFF21B96E7D00AA0C75 /* JorSearchFlowCoordinator.swift */,
+				81225FFF21B96E7D00AA0C75 /* JobSearchFlowCoordinator.swift */,
 			);
-			path = JorSearchFlow;
+			path = JobSearchFlow;
 			sourceTree = "<group>";
 		};
-		8122600321B96F1D00AA0C75 /* CoordinatorProtocol */ = {
+		8122600321B96F1D00AA0C75 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
 				8122600121B96ED800AA0C75 /* CoordinatorProtocol.swift */,
+				815B933821B975D5005497FB /* Injectable.swift */,
 			);
-			path = CoordinatorProtocol;
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		815B933A21B9761F005497FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81225FDE21B9647500AA0C75 /* JobSearchViewController.swift */,
+				81C8E0D021B97F980054925A /* JobSearchTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +278,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect --quiet --config \"${SRCROOT}/_swiftlint.yml\" --path \"${SRCROOT}/GithubJobsIOS-Client\"\nswiftlint lint --quiet --config \"${SRCROOT}/_swiftlint.yml\" --path \"${SRCROOT}/GithubJobsIOS-Client\"\nelse\nexit 0\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n#swiftlint autocorrect --quiet --config \"${SRCROOT}/_swiftlint.yml\" --path \"${SRCROOT}/GithubJobsIOS-Client\"\nswiftlint lint --quiet --config \"${SRCROOT}/_swiftlint.yml\" --path \"${SRCROOT}/GithubJobsIOS-Client\"\nelse\nexit 0\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -270,10 +287,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81225FDF21B9647500AA0C75 /* HomeViewController.swift in Sources */,
+				81225FDF21B9647500AA0C75 /* JobSearchViewController.swift in Sources */,
 				81225FDD21B9647500AA0C75 /* AppDelegate.swift in Sources */,
+				815B933C21B9766B005497FB /* JorSearchPresenter.swift in Sources */,
+				81C8E0D121B97F980054925A /* JobSearchTableViewCell.swift in Sources */,
 				8122600221B96ED800AA0C75 /* CoordinatorProtocol.swift in Sources */,
-				8122600021B96E7D00AA0C75 /* JorSearchFlowCoordinator.swift in Sources */,
+				8122600021B96E7D00AA0C75 /* JobSearchFlowCoordinator.swift in Sources */,
+				815B933921B975D5005497FB /* Injectable.swift in Sources */,
 				81225FFB21B9680000AA0C75 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

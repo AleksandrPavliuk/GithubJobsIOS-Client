@@ -37,3 +37,4 @@ disabled_rules:
   - type_name
   - shorthand_operator
   - generic_type_name
+  - trailing_whitespace

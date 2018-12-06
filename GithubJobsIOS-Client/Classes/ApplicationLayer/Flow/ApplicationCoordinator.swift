@@ -17,7 +17,7 @@ class ApplicationCoordinator: ApplicationCoordinatorProtocol {
 
     let window: UIWindow
 
-    private var jorSearchFlowCoordinator: CoordinatorProtocol?
+    private var jobSearchFlowCoordinator: CoordinatorProtocol?
 
     init(window: UIWindow) {
         self.window = window
@@ -28,7 +28,7 @@ class ApplicationCoordinator: ApplicationCoordinatorProtocol {
 // MARK: ApplicationCoordinatorProtocol
 extension ApplicationCoordinator {
     func start() {
-        jorSearchFlowCoordinator = JorSearchFlowCoordinator(window: window)
-        jorSearchFlowCoordinator?.start()
+        jobSearchFlowCoordinator = JobSearchFlowCoordinator(window: window)
+        jobSearchFlowCoordinator?.start()
     }
 }
