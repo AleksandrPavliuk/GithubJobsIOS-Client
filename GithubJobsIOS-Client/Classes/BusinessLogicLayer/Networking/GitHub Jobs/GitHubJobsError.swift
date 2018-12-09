@@ -24,4 +24,12 @@ enum GitHubJobsError: LocalizedError {
             return "Parsing error: \(parsingError.localizedDescription)"
         }
     }
+
+    var isSilent: Bool {
+        if case .networkError(let networkError) = self, case .cancelled = networkError {
+            return true
+        }
+
+        return false
+    }
 }

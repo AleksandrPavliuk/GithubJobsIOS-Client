@@ -33,7 +33,15 @@ extension JobSearchFlowCoordinator {
         }
 
         let presenter = JobSearchPresenter()
-        presenter.inject(dependencies: viewController)
+        let gitHubJobsService = GitHubJobsService(dependencies: (NetworkClient(),
+                                                                 DispatchQueue(label: "github.jobs.service",
+                                                                               qos: .userInitiated,
+                                                                               attributes: .concurrent)))
+        let gitHubJobsDataSource = GithubJobsDataSource(dependencies: (gitHubJobsService,
+                                                                       JobSearchTableViewCellConfigBuilder()))
+        let presenterDependencies = JobSearchPresenter.Dependencies(viewController, gitHubJobsDataSource)
+        presenter.inject(dependencies: presenterDependencies)
+
         viewController.inject(dependencies: presenter)
 
         navigationController = navController

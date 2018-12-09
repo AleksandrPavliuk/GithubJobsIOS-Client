@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8104728D21BA9FED00E8BC6B /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8104728C21BA9FED00E8BC6B /* URL+Extensions.swift */; };
 		81225FDD21B9647500AA0C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225FDC21B9647500AA0C75 /* AppDelegate.swift */; };
 		81225FDF21B9647500AA0C75 /* JobSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225FDE21B9647500AA0C75 /* JobSearchViewController.swift */; };
 		81225FE221B9647500AA0C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81225FE021B9647500AA0C75 /* Main.storyboard */; };
@@ -15,18 +16,29 @@
 		81225FFB21B9680000AA0C75 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225FFA21B9680000AA0C75 /* ApplicationCoordinator.swift */; };
 		8122600021B96E7D00AA0C75 /* JobSearchFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81225FFF21B96E7D00AA0C75 /* JobSearchFlowCoordinator.swift */; };
 		8122600221B96ED800AA0C75 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122600121B96ED800AA0C75 /* CoordinatorProtocol.swift */; };
+		812260F921BAAD5D00CC357D /* FunctionalComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812260F821BAAD5D00CC357D /* FunctionalComposition.swift */; };
+		812260FD21BD5DB800CC357D /* GithubJobsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812260FC21BD5DB800CC357D /* GithubJobsDataSource.swift */; };
+		812260FF21BD5E0D00CC357D /* GitHubJobsSearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812260FE21BD5E0D00CC357D /* GitHubJobsSearchQuery.swift */; };
+		8122610121BD85BA00CC357D /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122610021BD85BA00CC357D /* Configurable.swift */; };
+		8122610321BD890A00CC357D /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122610221BD890A00CC357D /* Reusable.swift */; };
+		8122610521BD899300CC357D /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122610421BD899300CC357D /* NibLoadableView.swift */; };
+		8122610721BD8A5000CC357D /* JobSearchTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122610621BD8A5000CC357D /* JobSearchTableFooterView.swift */; };
+		8122610921BD8A7D00CC357D /* JobSearchTableFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8122610821BD8A7D00CC357D /* JobSearchTableFooterView.xib */; };
+		8122610B21BDA04400CC357D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122610A21BDA04400CC357D /* Date+Extensions.swift */; };
+		8122610E21BDADF700CC357D /* JobSearchTableViewCellConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122610D21BDADF700CC357D /* JobSearchTableViewCellConfig.swift */; };
+		8122611021BDAE0600CC357D /* JobSearchTableViewCellConfigBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8122610F21BDAE0600CC357D /* JobSearchTableViewCellConfigBuilder.swift */; };
 		815B933921B975D5005497FB /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815B933821B975D5005497FB /* Injectable.swift */; };
-		815B933C21B9766B005497FB /* JorSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815B933B21B9766B005497FB /* JorSearchPresenter.swift */; };
+		815B933C21B9766B005497FB /* JobSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815B933B21B9766B005497FB /* JobSearchPresenter.swift */; };
 		81C8E0D121B97F980054925A /* JobSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8E0D021B97F980054925A /* JobSearchTableViewCell.swift */; };
 		81C8E0D521B9852B0054925A /* GitHubJobsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8E0D421B9852B0054925A /* GitHubJobsService.swift */; };
 		81C8E0D921B985880054925A /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8E0D821B985880054925A /* NetworkClient.swift */; };
-		81C8E0DB21B9859E0054925A /* GitHubJobsNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8E0DA21B9859E0054925A /* GitHubJobsNetworkRouter.swift */; };
 		81C8E0DF21B987890054925A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8E0DE21B987890054925A /* Result.swift */; };
 		81C8E0E121B98D970054925A /* GitHubJobsAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8E0E021B98D970054925A /* GitHubJobsAPIModel.swift */; };
 		81C8E0E321B98DC00054925A /* GitHubJobsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C8E0E221B98DC00054925A /* GitHubJobsError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8104728C21BA9FED00E8BC6B /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		81225FD921B9647500AA0C75 /* GithubJobsIOS-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GithubJobsIOS-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81225FDC21B9647500AA0C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81225FDE21B9647500AA0C75 /* JobSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchViewController.swift; sourceTree = "<group>"; };
@@ -37,12 +49,22 @@
 		81225FFA21B9680000AA0C75 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		81225FFF21B96E7D00AA0C75 /* JobSearchFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchFlowCoordinator.swift; sourceTree = "<group>"; };
 		8122600121B96ED800AA0C75 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		812260F821BAAD5D00CC357D /* FunctionalComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalComposition.swift; sourceTree = "<group>"; };
+		812260FC21BD5DB800CC357D /* GithubJobsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubJobsDataSource.swift; sourceTree = "<group>"; };
+		812260FE21BD5E0D00CC357D /* GitHubJobsSearchQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubJobsSearchQuery.swift; sourceTree = "<group>"; };
+		8122610021BD85BA00CC357D /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		8122610221BD890A00CC357D /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		8122610421BD899300CC357D /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		8122610621BD8A5000CC357D /* JobSearchTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchTableFooterView.swift; sourceTree = "<group>"; };
+		8122610821BD8A7D00CC357D /* JobSearchTableFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobSearchTableFooterView.xib; sourceTree = "<group>"; };
+		8122610A21BDA04400CC357D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		8122610D21BDADF700CC357D /* JobSearchTableViewCellConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchTableViewCellConfig.swift; sourceTree = "<group>"; };
+		8122610F21BDAE0600CC357D /* JobSearchTableViewCellConfigBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchTableViewCellConfigBuilder.swift; sourceTree = "<group>"; };
 		815B933821B975D5005497FB /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
-		815B933B21B9766B005497FB /* JorSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JorSearchPresenter.swift; sourceTree = "<group>"; };
+		815B933B21B9766B005497FB /* JobSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchPresenter.swift; sourceTree = "<group>"; };
 		81C8E0D021B97F980054925A /* JobSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchTableViewCell.swift; sourceTree = "<group>"; };
 		81C8E0D421B9852B0054925A /* GitHubJobsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubJobsService.swift; sourceTree = "<group>"; };
 		81C8E0D821B985880054925A /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
-		81C8E0DA21B9859E0054925A /* GitHubJobsNetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubJobsNetworkRouter.swift; sourceTree = "<group>"; };
 		81C8E0DE21B987890054925A /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		81C8E0E021B98D970054925A /* GitHubJobsAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubJobsAPIModel.swift; sourceTree = "<group>"; };
 		81C8E0E221B98DC00054925A /* GitHubJobsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubJobsError.swift; sourceTree = "<group>"; };
@@ -99,6 +121,7 @@
 		81225FEF21B965EC00AA0C75 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				812260FA21BD5D7E00CC357D /* DataSource */,
 				81C8E0D221B984D70054925A /* Networking */,
 			);
 			path = BusinessLogicLayer;
@@ -115,7 +138,7 @@
 		81225FF121B9660200AA0C75 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
-				81225FF421B9664C00AA0C75 /* HomeScreen */,
+				81225FF421B9664C00AA0C75 /* JobSearchScreen */,
 				81225FF321B9661900AA0C75 /* Storyboards */,
 			);
 			path = PresentationLayer;
@@ -140,13 +163,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		81225FF421B9664C00AA0C75 /* HomeScreen */ = {
+		81225FF421B9664C00AA0C75 /* JobSearchScreen */ = {
 			isa = PBXGroup;
 			children = (
+				8122610C21BDAD8E00CC357D /* Model */,
 				815B933A21B9761F005497FB /* View */,
-				815B933B21B9766B005497FB /* JorSearchPresenter.swift */,
+				815B933B21B9766B005497FB /* JobSearchPresenter.swift */,
 			);
-			path = HomeScreen;
+			path = JobSearchScreen;
 			sourceTree = "<group>";
 		};
 		81225FF621B966F300AA0C75 /* Resources */ = {
@@ -195,8 +219,37 @@
 			children = (
 				8122600121B96ED800AA0C75 /* CoordinatorProtocol.swift */,
 				815B933821B975D5005497FB /* Injectable.swift */,
+				8122610021BD85BA00CC357D /* Configurable.swift */,
+				8122610221BD890A00CC357D /* Reusable.swift */,
+				8122610421BD899300CC357D /* NibLoadableView.swift */,
 			);
 			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		812260FA21BD5D7E00CC357D /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				812260FB21BD5DA000CC357D /* GitHub Jobs */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		812260FB21BD5DA000CC357D /* GitHub Jobs */ = {
+			isa = PBXGroup;
+			children = (
+				812260FC21BD5DB800CC357D /* GithubJobsDataSource.swift */,
+				812260FE21BD5E0D00CC357D /* GitHubJobsSearchQuery.swift */,
+			);
+			path = "GitHub Jobs";
+			sourceTree = "<group>";
+		};
+		8122610C21BDAD8E00CC357D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8122610D21BDADF700CC357D /* JobSearchTableViewCellConfig.swift */,
+				8122610F21BDAE0600CC357D /* JobSearchTableViewCellConfigBuilder.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		815B933A21B9761F005497FB /* View */ = {
@@ -204,6 +257,8 @@
 			children = (
 				81225FDE21B9647500AA0C75 /* JobSearchViewController.swift */,
 				81C8E0D021B97F980054925A /* JobSearchTableViewCell.swift */,
+				8122610621BD8A5000CC357D /* JobSearchTableFooterView.swift */,
+				8122610821BD8A7D00CC357D /* JobSearchTableFooterView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,7 +277,6 @@
 			children = (
 				81C8E0D421B9852B0054925A /* GitHubJobsService.swift */,
 				81C8E0E021B98D970054925A /* GitHubJobsAPIModel.swift */,
-				81C8E0DA21B9859E0054925A /* GitHubJobsNetworkRouter.swift */,
 				81C8E0E221B98DC00054925A /* GitHubJobsError.swift */,
 			);
 			path = "GitHub Jobs";
@@ -240,6 +294,9 @@
 			isa = PBXGroup;
 			children = (
 				81C8E0DE21B987890054925A /* Result.swift */,
+				8104728C21BA9FED00E8BC6B /* URL+Extensions.swift */,
+				812260F821BAAD5D00CC357D /* FunctionalComposition.swift */,
+				8122610A21BDA04400CC357D /* Date+Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -306,6 +363,7 @@
 				81225FE721B9647700AA0C75 /* LaunchScreen.storyboard in Resources */,
 				81225FE421B9647700AA0C75 /* Assets.xcassets in Resources */,
 				81225FE221B9647500AA0C75 /* Main.storyboard in Resources */,
+				8122610921BD8A7D00CC357D /* JobSearchTableFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,20 +395,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8104728D21BA9FED00E8BC6B /* URL+Extensions.swift in Sources */,
+				8122610B21BDA04400CC357D /* Date+Extensions.swift in Sources */,
 				81C8E0D521B9852B0054925A /* GitHubJobsService.swift in Sources */,
+				8122610721BD8A5000CC357D /* JobSearchTableFooterView.swift in Sources */,
 				81C8E0D921B985880054925A /* NetworkClient.swift in Sources */,
+				8122610E21BDADF700CC357D /* JobSearchTableViewCellConfig.swift in Sources */,
 				81225FDF21B9647500AA0C75 /* JobSearchViewController.swift in Sources */,
 				81C8E0E321B98DC00054925A /* GitHubJobsError.swift in Sources */,
+				812260FF21BD5E0D00CC357D /* GitHubJobsSearchQuery.swift in Sources */,
+				8122610121BD85BA00CC357D /* Configurable.swift in Sources */,
 				81225FDD21B9647500AA0C75 /* AppDelegate.swift in Sources */,
-				815B933C21B9766B005497FB /* JorSearchPresenter.swift in Sources */,
-				81C8E0DB21B9859E0054925A /* GitHubJobsNetworkRouter.swift in Sources */,
+				812260FD21BD5DB800CC357D /* GithubJobsDataSource.swift in Sources */,
+				815B933C21B9766B005497FB /* JobSearchPresenter.swift in Sources */,
+				8122611021BDAE0600CC357D /* JobSearchTableViewCellConfigBuilder.swift in Sources */,
 				81C8E0DF21B987890054925A /* Result.swift in Sources */,
 				81C8E0D121B97F980054925A /* JobSearchTableViewCell.swift in Sources */,
 				8122600221B96ED800AA0C75 /* CoordinatorProtocol.swift in Sources */,
 				81C8E0E121B98D970054925A /* GitHubJobsAPIModel.swift in Sources */,
 				8122600021B96E7D00AA0C75 /* JobSearchFlowCoordinator.swift in Sources */,
 				815B933921B975D5005497FB /* Injectable.swift in Sources */,
+				8122610521BD899300CC357D /* NibLoadableView.swift in Sources */,
+				8122610321BD890A00CC357D /* Reusable.swift in Sources */,
 				81225FFB21B9680000AA0C75 /* ApplicationCoordinator.swift in Sources */,
+				812260F921BAAD5D00CC357D /* FunctionalComposition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
