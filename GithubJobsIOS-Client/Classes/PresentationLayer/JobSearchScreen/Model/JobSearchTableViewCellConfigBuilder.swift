@@ -15,7 +15,7 @@ class JobSearchTableViewCellConfigBuilder {
         static let separator = " - "
     }
 
-    func buildJobSearchTableViewCellConfig(model: Job) -> JobSearchTableViewCellConfig {
+    func buildJobSearchTableViewCellConfig(model: GitHubAPIJob) -> JobSearchTableViewCellConfig {
         return .init(title: model.title,
                      companyAndType: makeCompanyAndType(company: model.company, type: model.type),
                      type: model.type,

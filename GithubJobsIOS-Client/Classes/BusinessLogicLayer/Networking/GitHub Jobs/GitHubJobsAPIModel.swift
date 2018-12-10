@@ -8,15 +8,15 @@
 
 import Foundation
 
-typealias GitHubJobsAPIModel = [Job]
+typealias GitHubJobsAPIModel = [GitHubAPIJob]
 
-extension Array where Element == Job {
+extension Array where Element == GitHubAPIJob {
     static func empty() -> GitHubJobsAPIModel {
-        return [Job]()
+        return [GitHubAPIJob]()
     }
 }
 
-struct Job: Decodable {
+struct GitHubAPIJob: Decodable {
     let id: String
     let type: String
     let url: String

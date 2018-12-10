@@ -53,9 +53,9 @@ enum NetworkError: LocalizedError {
 
 protocol NetworkClientProtocol {
 
-    @discardableResult func perform(
-        request: URLRequest,
-        completion: @escaping (Result<(Data?, HTTPURLResponse), NetworkError>) -> Void) -> URLSessionDataTask
+    @discardableResult
+    func perform(request: URLRequest,
+                 completion: @escaping (Result<(Data?, HTTPURLResponse), NetworkError>) -> Void) -> URLSessionDataTask
 
 
 }
@@ -69,8 +69,9 @@ class NetworkClient: NetworkClientProtocol {
         session = URLSession(configuration: configuration)
     }
 
-    @discardableResult func perform(request: URLRequest,
-                                    completion: @escaping (Result<(Data?, HTTPURLResponse), NetworkError>) -> Void) -> URLSessionDataTask {
+    @discardableResult
+    func perform(request: URLRequest,
+                 completion: @escaping (Result<(Data?, HTTPURLResponse), NetworkError>) -> Void) -> URLSessionDataTask {
 
         let dataTask = session.dataTask(with: request) { data, response, error in
             guard let response = response as? HTTPURLResponse else {

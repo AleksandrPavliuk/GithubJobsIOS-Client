@@ -42,7 +42,6 @@ class GithubJobsDataSource: GithubJobsDataSourceProtocol, InitializeInjectable {
     var jobs = [JobSearchTableViewCellConfig]()
 
     // MARK: - Private methods
-
     private func loadDataChunk(loadingType: LoadingType,
                                withSearchQuery query: GitHubJobsSearchQuery,
                                completion: @escaping GithubJobsDataSourceResultHandler) {

@@ -69,16 +69,19 @@ enum Result<TValue, TError> {
 
     // MARK: Raw value related
 
-    @discardableResult func map<T, E>(ifSuccess: @escaping (TValue) -> T,
-                                      ifFailure: @escaping (TError) -> E) -> Result<T, E> {
+    @discardableResult
+    func map<T, E>(ifSuccess: @escaping (TValue) -> T,
+                   ifFailure: @escaping (TError) -> E) -> Result<T, E> {
         return self.flatMap(ifSuccess: ifSuccess -=-=- liftValue, ifFailure: ifFailure -=-=- liftError)
     }
 
-    @discardableResult func mapValue<T>(_ transform: @escaping (TValue) -> T) -> Result<T, TError> {
+    @discardableResult
+    func mapValue<T>(_ transform: @escaping (TValue) -> T) -> Result<T, TError> {
         return self.map(ifSuccess: transform, ifFailure: identity)
     }
 
-    @discardableResult func mapError<E>(_ transform: @escaping (TError) -> E) -> Result<TValue, E> {
+    @discardableResult
+    func mapError<E>(_ transform: @escaping (TError) -> E) -> Result<TValue, E> {
         return self.map(ifSuccess: identity, ifFailure: transform)
     }
 
